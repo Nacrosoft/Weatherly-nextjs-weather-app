@@ -12,9 +12,9 @@ interface FooterProps {
 const Footer = memo(
   ({
     className = '',
-    authorName = 'Manjunath R',
-    githubUsername = 'manju1807',
-    repoUrl = 'Advanced-weather-app-nextjs',
+    authorName = 'Meetefy',
+    githubUsername = 'Meetefy',
+    repoUrl = 'integrate-public-weather-api',
   }: FooterProps) => {
     const currentYear = new Date().getFullYear();
     const githubProfileUrl = `https://github.com/${githubUsername}`;
@@ -29,13 +29,7 @@ const Footer = memo(
         <div className="container mx-auto px-4 py-3">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-sm text-muted-foreground">
             <span className="flex items-center gap-1">
-              <span>Made with</span>
-              <span
-                className="text-red-500 inline-flex items-center"
-                role="img"
-                aria-label="love"
-              >
-                <span className="animate-pulse">❤️</span>
+              
               </span>
               <span>by</span>
               <Tooltip>
