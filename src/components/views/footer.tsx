@@ -18,7 +18,7 @@ const Footer = memo(
   }: FooterProps) => {
     const currentYear = new Date().getFullYear();
     const githubProfileUrl = `https://github.com/${githubUsername}`;
-    const githubRepoUrl = `${githubProfileUrl}/${repoUrl}`;
+    const githubRepoUrl = `https://github.com/${githubUsername}/${repoUrl}`; // Corrected URL
 
     return (
       <footer
@@ -29,9 +29,7 @@ const Footer = memo(
         <div className="container mx-auto px-4 py-3">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-sm text-muted-foreground">
             <span className="flex items-center gap-1">
-              
-              </span>
-              <span>by</span>
+              <span>by</span> {/* Moved "by" inside the first span */}
               <Tooltip>
                 <TooltipTrigger asChild>
                   <a
@@ -48,7 +46,7 @@ const Footer = memo(
               </Tooltip>
               <span className="mx-1">©</span>
               <span>{currentYear}</span>
-            </span>
+            </span> {/* Closing tag for the first span was missing */}
 
             <Tooltip>
               <TooltipTrigger asChild>
