@@ -12,9 +12,9 @@ interface FooterProps {
 const Footer = memo(
   ({
     className = '',
-    authorName = 'Meetefy',
-    githubUsername = 'Meetefy',
-    repoUrl = 'integrate-public-weather-api',
+    authorName = 'Ylsoo',
+    githubUsername = 'Ylsoo',
+    repoUrl = 'ylsoo-maps-api',
   }: FooterProps) => {
     const currentYear = new Date().getFullYear();
     const githubProfileUrl = `https://github.com/${githubUsername}`;
@@ -102,7 +102,7 @@ const Footer = memo(
                     }}
                      onClick={(e) => e.stopPropagation()} // Prevent click from closing modal
                   >
-                    <p>This application uses the Meetefy Weather API, version 1.1.2.</p>
+                    <p>This application uses the Ylsoo Weather API, version 1.0.0</p>
                     <button onClick={() => setIsModalOpen(false)}>Close</button>
 
                   </div>
