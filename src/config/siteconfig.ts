@@ -24,9 +24,9 @@ export const viewport: Viewport = {
 
 // Site configuration
 export const siteConfig = {
-  url: 'https://weather.meetefy.com/',
+  url: 'https://weather.ylsoo.com/',
   name: 'Weather',
-  title: 'Weather - Meetefy',
+  title: 'Weather - Ylsoo',
   description:
     'Get accurate weather forecasts, real-time updates, air quality data, and detailed weather information for any location worldwide. Features interactive maps, hourly forecasts, and comprehensive weather metrics using OpenWeather API.',
   keywords:
